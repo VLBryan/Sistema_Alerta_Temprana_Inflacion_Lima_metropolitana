@@ -1,0 +1,8 @@
+﻿Prueba,Resultado,Detalle
+P1 · Umbrales P33/P67 solo con entrenamiento,APROBADA,8 orígenes aleatorios; futuro corrupto no altera los umbrales
+P2 · Umbrales recalculados por ventana,APROBADA,"P33 toma 60 valores distintos, P67 60"
+P3 · Orden de umbrales P33 < P67,APROBADA,
+P4 · Asignación de categorías (vs. implementación independiente),APROBADA,60 predicciones
+P5 · Valores iguales o cercanos a P33 y P67,APROBADA,P33 → Baja · P33+ε → Media · P67 → Media · P67+ε → Alta
+P6 · Una categoría válida por predicción,APROBADA,10 modelos × 60 orígenes
+P7 · Evaluación frente al observado (métricas y matriz),APROBADA,matriz con 60 casos
