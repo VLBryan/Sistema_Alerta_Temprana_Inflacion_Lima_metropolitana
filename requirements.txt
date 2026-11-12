@@ -12,3 +12,4 @@ xgboost>=3.0
 shap>=0.48
 plotly>=6.0
 streamlit>=1.49
+nbformat>=4.2.0
