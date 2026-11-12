@@ -1,0 +1,20 @@
+{
+  "fecha_emision": "2026-11-12",
+  "modelo": "XGBoost",
+  "origen": "2026-10",
+  "periodo_objetivo": "2026-11",
+  "ipc_observado_origen": 0.571496537877728,
+  "prediccion": 0.3995142877101898,
+  "p05": -0.10136119026778223,
+  "p50": 0.3968261373562664,
+  "p95": 1.1585434758013313,
+  "P33": 0.1109621172795782,
+  "P67": 0.3586725023161462,
+  "alerta": "Alta",
+  "alerta_mas_probable": "Alta",
+  "prob_baja": 0.18225,
+  "prob_media": 0.2174,
+  "prob_alta": 0.60035,
+  "mae_validacion": 0.2574263642818938,
+  "mae_prueba": 0.26159479373692474
+}

@@ -1,0 +1,2 @@
+﻿fecha_emision,periodo_objetivo,modelo,prediccion,p05,p95,P33,P67,alerta_emitida,observado,alerta_observada,error
+2026-11-12,2026-11,XGBoost,0.3995,-0.1014,1.1585,0.111,0.3587,Alta,,,

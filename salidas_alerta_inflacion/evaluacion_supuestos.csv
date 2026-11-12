@@ -1,0 +1,9 @@
+﻿Supuesto,Prueba,Resultado,¿Cumple?,Implicación
+Consistencia temporal,"Continuidad, duplicados y NaN del IPC","0 faltantes, 0 duplicados, 0 NaN",Sí,Serie mensual continua; no se requiere imputación del objetivo
+Disponibilidad de indicadores,Comparación día de publicación vs. día de emisión (5),"Rezago de 1 mes en: ipm, expectativa_12m",Sí (por construcción),Cada variable se desplaza según su fecha de publicación; verificar calendarios oficiales (supuesto)
+Estabilidad (media / varianza / cambios estructurales),"Welch, Levene y CUSUM",p(media)=0.441; p(varianza)=0.149; p(CUSUM)=0.074,Sí,Régimen estable
+Estacionariedad,ADF + KPSS (IPC y predictores),IPC: Estacionaria; no estacionarias: ninguna,Sí,Los modelos pueden trabajar con la serie en niveles de variación mensual
+Estacionalidad,STL (periodo 12) – fuerza estacional,Fuerza = 0.48,Sí,Se incluyen mes (seno/coseno) y rezago anual
+Prevención de fuga (variables),Truncamiento y enmascarado en 12 orígenes aleatorios,Variables idénticas con datos truncados,Sí,Las características no usan información posterior al origen
+Capacidad de generalización,MAE prueba / MAE validación del modelo seleccionado,XGBoost: 0.257 (val) → 0.262 (prueba); razón 1.02,Sí,Desempeño estable fuera de muestra
+Prevención de fuga (validación),assert en cada origen del walk-forward (último objetivo ≤ origen),60 orígenes × 6 modelos sin violaciones,Sí,Evaluación fuera de muestra genuina
